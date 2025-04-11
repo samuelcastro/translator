@@ -4,13 +4,10 @@ import React, { useState, useEffect, useRef } from "react";
 import useWebRTCAudioSession from "@/hooks/use-webrtc";
 import { TextInput } from "@/components/text-input";
 import { motion } from "framer-motion";
-import type { DetectedAction } from "@/types";
 import { medicalTools } from "@/lib/medical-tools";
 import { useMedicalToolFunctions } from "@/hooks/use-medical-tools";
 import useWakeWordDetection from "@/hooks/use-wake-word";
-import Link from "next/link";
 
-// ShadCN Components
 import {
   Card,
   CardContent,
