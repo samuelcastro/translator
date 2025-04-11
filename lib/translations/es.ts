@@ -2,27 +2,30 @@ export const es = {
   broadcast: {
     end: "Finalizar Transmisión",
     live: "En Vivo",
-    start: "Iniciar Transmisión"
+    start: "Iniciar Transmisión",
   },
   header: {
     title: "Acerca de",
-    about: "Este es un proyecto que pretende demostrar cómo usar la API en tiempo real de OpenAI con WebRTC en un proyecto moderno de Next 15. Tiene componentes shadcn/ui ya instalados y el hook de sesión de audio WebRTC ya implementado. Clona el proyecto y define tus propias herramientas.",
-    banner: "🎉 ¡Descubre la nueva biblioteca OpenAI Realtime Blocks UI para Next.js!",
+    about:
+      "Este intérprete médico está diseñado para facilitar la comunicación en tiempo real entre pacientes y proveedores de atención médica que hablan diferentes idiomas. Utilizando traducción impulsada por IA y WebRTC, permite conversaciones fluidas y captura información médica importante.",
+    banner:
+      "🩺 Su intérprete médico IA de confianza para conversaciones de salud",
     bannerLink: "Saber más →",
     beta: "Beta",
     dark: "Oscuro",
     github: "Estrella en GitHub",
     language: "Idioma",
     light: "Claro",
-    logo: "OpenAI Realtime Starter",
+    logo: "Intérprete Médico IA",
     system: "Sistema",
     theme: "Cambiar tema",
-    twitter: "Seguir en"
+    twitter: "Seguir en",
   },
   hero: {
     badge: "Next.js + shadcn/ui",
-    subtitle: "Haga una demostración haciendo clic en el botón de abajo y pruebe las herramientas disponibles",
-    title: "API en tiempo real de OpenAI (WebRTC)"
+    subtitle:
+      'Comience una conversación diciendo "Hey Sully" o haciendo clic en el botón del micrófono',
+    title: "Asistente Intérprete Médico",
   },
   messageControls: {
     content: "Contenido",
@@ -31,85 +34,93 @@ export const es = {
     logs: "Registros de Conversación",
     search: "Buscar mensajes...",
     type: "Tipo",
-    view: "Ver Registros"
+    view: "Ver Registros",
   },
   status: {
     error: "¡Ups!",
-    info: "Alternando Asistente de Voz...",
+    info: "Activando Intérprete Médico...",
     language: "Idioma cambiado de",
     session: "Sesión establecida",
-    success: "¡Estamos en vivo!",
-    toggle: "Alternando Asistente de Voz..."
+    success: "Intérprete activo",
+    toggle: "Activando Intérprete Médico...",
   },
   tokenUsage: {
     input: "Tokens de Entrada",
     output: "Tokens de Salida",
     total: "Tokens Totales",
-    usage: "Uso de Tokens"
+    usage: "Uso de Tokens",
   },
   tools: {
     availableTools: {
-      title: "Herramientas Disponibles",
+      title: "Herramientas Médicas",
       copyFn: {
-        description: 'Di "Copiar eso al portapapeles" para pegarlo en algún lugar.',
-        name: "Función Copiar"
+        description:
+          'Di "Copiar eso al portapapeles" para guardar información importante.',
+        name: "Copiar Texto",
       },
       getTime: {
-        description: 'Pregunta "¿Qué hora es?" para obtener la hora actual.',
-        name: "Obtener Hora"
+        description:
+          'Pregunta "¿Qué hora es?" para registrar la hora actual en registros médicos.',
+        name: "Obtener Hora",
       },
       launchWebsite: {
-        description: '"Llévame a [sitio web]" para abrir un sitio en una nueva pestaña.',
-        name: "Abrir Sitio Web"
+        description:
+          '"Abrir [sitio web]" para acceder a recursos médicos o portales de pacientes.',
+        name: "Abrir Sitio Web",
       },
       partyMode: {
-        description: '¡Di "Iniciar modo fiesta" para una animación dinámica de confeti!',
-        name: "Modo Fiesta"
+        description:
+          '¡Di "Modo celebración" al compartir resultados positivos de salud!',
+        name: "Modo Celebración",
       },
       themeSwitcher: {
-        description: 'Di "Cambiar fondo" o "Cambiar a modo oscuro" o "Cambiar a modo claro".',
-        name: "Cambiar Tema"
+        description:
+          'Di "Cambiar a modo oscuro" o "Cambiar a modo claro" para comodidad visual.',
+        name: "Cambiar Tema",
       },
       scrapeWebsite: {
-        name: "Extractor de Sitios Web",
-        description: 'Di "Extraer contenido de [URL del sitio]" para obtener contenido de una página web.'
-      }
+        name: "Búsqueda de Recursos Médicos",
+        description:
+          'Di "Buscar información sobre [término médico]" para obtener información relevante.',
+      },
     },
     clipboard: {
-      description: "Ahora puedes pegarlo en algún lugar.",
-      success: "Texto copiado al portapapeles. Pide al usuario que lo pegue en algún lugar.",
-      toast: "¡Texto copiado al portapapeles!"
+      description: "Información guardada para referencia.",
+      success:
+        "Texto copiado al portapapeles. El paciente o médico ahora puede hacer referencia a esta información.",
+      toast: "¡Información médica copiada al portapapeles!",
     },
     launchWebsite: {
-      description: "Error al abrir el sitio web",
-      success: "¡Sitio web abierto! Informa al usuario que se ha abierto.",
-      toast: "Abriendo sitio web "
+      description: "Error al abrir recurso médico",
+      success: "Recurso médico abierto exitosamente.",
+      toast: "Abriendo recurso médico ",
     },
     partyMode: {
-      description: "Error al activar el modo fiesta",
-      success: "Modo fiesta activado",
-      toast: "¡Modo fiesta!"
+      description: "Error al activar modo celebración",
+      success: "Modo celebración activado para resultado positivo",
+      toast: "¡Celebrando buenas noticias!",
     },
-    switchTheme: "Tema cambiado a ",
-    themeFailed: "Error al cambiar el tema",
-    time: "Anunciar al usuario: La hora actual es ",
+    switchTheme: "Modo de visualización cambiado a ",
+    themeFailed: "Error al cambiar modo de visualización",
+    time: "La hora actual es ",
     scrapeWebsite: {
-      success: "Contenido del sitio web extraído exitosamente",
-      description: "Error al extraer contenido del sitio web",
-      toast: "Extrayendo contenido del sitio web..."
-    }
+      success: "Información médica recuperada exitosamente",
+      description: "Error al recuperar información médica",
+      toast: "Buscando información médica...",
+    },
   },
   transcriber: {
-    title: "Transcripción en Vivo"
+    title: "Traducción en Vivo",
   },
   voice: {
-    select: "Seleccionar una voz",
-    ash: "Ash - Suave y Profesional",
-    ballad: "Ballad - Cálida y Cautivadora",
-    coral: "Coral - Clara y Amigable",
-    sage: "Sage - Autoritaria y Tranquila",
-    verse: "Verse - Dinámica y Expresiva"
+    select: "Seleccionar voz del intérprete",
+    ash: "Ash - Intérprete Médico Claro y Profesional",
+    ballad: "Ballad - Intérprete Médico Cálido y Tranquilizador",
+    coral: "Coral - Intérprete Médico Amigable y Preciso",
+    sage: "Sage - Experto Médico Autoritario y Tranquilo",
+    verse: "Verse - Traductor Médico Compasivo y Preciso",
   },
   language: "Spanish",
-  languagePrompt: "Habla y responde solo en español. Es crucial que mantengas tus respuestas en español. Si el usuario habla en otros idiomas, deberías responder en español. (Spanish only)"
-} 
+  languagePrompt:
+    "Habla y responde solo en español. Es crucial que mantengas tus respuestas en español. Si el usuario habla en otros idiomas, deberías responder en español. (Spanish only)",
+};
