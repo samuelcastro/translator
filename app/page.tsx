@@ -280,12 +280,6 @@ const MedicalInterpreter: React.FC = () => {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <CardTitle>Session Status</CardTitle>
-                  <Link href="/history">
-                    <Button variant="outline" size="sm" className="h-8">
-                      <FileText className="h-4 w-4 mr-2" />
-                      History
-                    </Button>
-                  </Link>
                 </div>
                 <CardDescription>
                   Current status of your interpreter session
