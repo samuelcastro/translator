@@ -192,13 +192,6 @@ const MedicalInterpreter: React.FC = () => {
       console.log(`Registering function: ${name}`);
       registerFunction(name, func);
     });
-
-    // Verify the functions have been registered
-    setTimeout(() => {
-      console.log(
-        "Tools registration complete. Ensure they're available when needed."
-      );
-    }, 500);
   }, [registerFunction, medicalToolFunctions]);
 
   // Reset conversation
@@ -220,13 +213,6 @@ const MedicalInterpreter: React.FC = () => {
       setActiveTab("conversation");
     }, 1000);
   };
-
-  // Add this useEffect to monitor conversationSummary
-  useEffect(() => {
-    if (conversationSummary) {
-      console.log("Conversation summary updated:", conversationSummary);
-    }
-  }, [conversationSummary]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
