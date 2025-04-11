@@ -12,6 +12,7 @@ try {
     console.error("Missing Supabase environment variables");
   } else {
     supabase = createClient(supabaseUrl, supabaseServiceKey);
+    console.log("Supabase client initialized successfully");
   }
 } catch (error) {
   console.error("Failed to initialize Supabase client:", error);
