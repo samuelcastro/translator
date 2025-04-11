@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Sully.ai - Medical Interpreter",
   description:
     "Sully.ai's Medical Interpreter facilitates real-time communication between English-speaking clinicians and Spanish-speaking patients with AI-powered translation.",
-  authors: [{ name: siteConfig.author, url: siteConfig.links.twitter }],
+  authors: [{ name: siteConfig.author, url: siteConfig.url }],
   creator: siteConfig.author,
   metadataBase: new URL(siteConfig.url),
   openGraph: {
