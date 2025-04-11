@@ -44,11 +44,16 @@ export const ConversationView: React.FC<ConversationViewProps> = ({
         ) : (
           <div className="space-y-4">
             {conversation.map((msg) => {
+              // Patient is a user speaking Spanish
               const isPatient =
                 msg.role === "user" && messageLanguages[msg.id] === "spanish";
+
+              // Doctor is a user speaking English (non-Spanish)
               const isDoctor =
                 msg.role === "user" && messageLanguages[msg.id] !== "spanish";
-              const isAssistant = msg.role === "assistant";
+
+              // Sully is the AI assistant
+              const isSully = msg.role === "assistant";
 
               return (
                 <div
@@ -84,7 +89,7 @@ export const ConversationView: React.FC<ConversationViewProps> = ({
                           ? "Patient 🇪🇸"
                           : isDoctor
                           ? "Doctor 🇺🇸"
-                          : "Interpreter 🌐"}
+                          : "Sully 🌐"}
                       </Badge>
                       {!msg.isFinal && (
                         <span className="flex h-2 w-2 bg-blue-500 rounded-full animate-pulse" />
