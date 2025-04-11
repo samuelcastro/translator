@@ -143,7 +143,7 @@ export const SessionControlPanel: React.FC<SessionControlPanelProps> = ({
                 onClick={handleEndConversation}
               >
                 <FileText className="mr-2 h-4 w-4" />
-                Summarize Conversation
+                Summarize
               </Button>
 
               <Button
