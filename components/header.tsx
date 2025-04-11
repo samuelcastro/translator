@@ -8,7 +8,6 @@ import { MobileNav } from "./mobile-nav";
 import { Badge } from "./ui/badge";
 import { Globe, Menu } from "lucide-react";
 import { motion } from "framer-motion";
-import { LanguageSwitcher } from "@/components/language-switcher";
 import { useTranslations } from "@/components/translations-context";
 
 export function Header() {
@@ -47,7 +46,6 @@ export function Header() {
           transition={{ delay: 0.1 }}
           className="flex gap-3 items-center justify-end"
         >
-          <LanguageSwitcher />
           <ThemeSwitcher />
           <Button
             variant="outline"
