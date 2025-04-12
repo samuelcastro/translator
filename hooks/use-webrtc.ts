@@ -348,13 +348,7 @@ export default function useWebRTCAudioSession(
             }
 
             // Check if this is a summary generation
-            if (
-              lastMessage.text.includes("SUMMARY:") ||
-              lastMessage.text.includes("RESUMEN:") ||
-              lastMessage.text.toLowerCase().includes("summary") ||
-              lastMessage.text.toLowerCase().includes("resumen") ||
-              lastMessage.text.match(/^(here is |here's )?a summary/i)
-            ) {
+            if (lastMessage.text.startsWith("SUMMARY:")) {
               console.log("Summary detected in message:", lastMessage.text);
               setConversationSummary(lastMessage.text);
             }
